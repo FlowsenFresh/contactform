@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meine erste Webseite</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Willkommen zu meiner ersten Webseite!</h1>
+    <p>Dies ist eine einfache HTML-Seite, die wir gemeinsam erstellt haben.</p>
+
+    <h2>Kontaktformular</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <span class="error" id="nameError"></span>
+
+      <label for="email">E-Mail:</label>
+      <input type="email" id="email" name="email" required />
+      <span class="error" id="emailError"></span>
+
+      <label for="message">Nachricht:</label>
+      <textarea id="message" name="message" required></textarea>
+      <span class="error" id="messageError"></span>
+
+      <button type="submit">Absenden</button>
+    </form>
+
+    <p id="confirmationMessage" style="color: green; display: none">
+      Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
+    </p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
